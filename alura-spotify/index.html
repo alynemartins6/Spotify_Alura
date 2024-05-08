@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Imersão </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/vars.css">
+    <link rel="stylesheet" href="./styles/media-queries.css">
+    <link rel="stylesheet" href="./styles/sidebar-footer.css">
+    <link rel="stylesheet" href="./styles/main-content.css">
+
+</head>
+<body>
+    <div class="sidebar">
+
+        <nav class="sidebar__navigation">
+
+            <div class="logo">
+
+                <a href="">
+                    <img src="./icones/logo-spotify.png" alt="logo-spotify">
+                </a>
+            </div>
+                <ul>
+                    <li>
+                        <a href="">
+                            <span class="fa fa-home"></span>
+                            <span>Início</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="fa fa-search"></span>
+                            <span>Buscar</span>
+                        </a>
+                    </li>
+                </ul>
+        </nav>
+
+        <div class="library">
+            <div class="library__content">
+                <button class="library__button">
+                    <span class="fa fa-book"></span>  
+                    <span>Sua Biblioteca</span> 
+                </button>
+                <span class="fa fa-plus"></span>
+            </div>
+
+            <section class="section__playlist">
+                <div class="section__playlist__content">
+                    <span class="text title">Crie sua primeira playlist</span>
+                    <span class="text subtitle"> É facil,vamos te ajudar.</span>
+                    <button class="section__playlist__button">
+                        <span>Criar playlist</span>
+                    </button>
+                </div>
+            </section>
+
+            <div class="cookies">
+                <a href="">Cookies</a>
+            </div>
+
+            <div class="languagues">
+                <button class="languagues__button">
+                    <span class="fa fa-globe"></span>
+                    <span>Portugues do Brasil</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="main-container">
+            <nav class="header__navigation">
+                <div class="navigation">
+                    <button class="arrow-left">
+                        <img src="./icones/small-left.png" alt="Seta esquerda"/>
+                     </button>
+                    <button class="arrow-right">
+                        <img src="./icones/small-right.png" alt="Seta direita"/>
+                     </button>
+
+                    <div class="header__search">
+                        <img src="./icones/search.png" alt=""/>
+                        <input id="search-input" type="text" maxlength="800" placeholder="O que você quer ouvir ?"/>
+                     </div>
+                 </div>
+                 
+                    <div class="header__login">
+                        <button class="subscribe">Inscreva-se</button>
+                        <button class="login">Entrar</button>
+                     </div>
+             </nav>
+
+             <div class="playlist-container">
+                <div id="result-playlist">
+                    <div class="playlist">
+                        <h1 id="greeting">Bom Dia!</h1>
+                        <h2 class="session">Navegar por todas as sessões</h2>
+                    </div>
+
+                    <div class="offer__scroll-container">
+                        <div class="offer__list">
+                            <section class="offer__list-item">
+                                <!--CARD 1-->
+                                <a href="" class="cards">
+                                    <div class="cards__card1">
+                                        <img src="./icones/1.jpeg" alt="Pop Brasil">
+                                    </div>
+                                </a>
+                                <!--CARD 2-->
+                                <a href="" class="cards">
+                                    <div class="cards__card2">
+                                        <img src="./icones/2.jpeg" alt="Pop Rising">
+                                     </div>
+                                </a>
+                                 <!--CARD 3-->
+                                 <a href="" class="cards">
+                                    <div class="cards__card3">
+                                        <img src="./icones/3.jpeg" alt="Viva Latino">
+                                     </div>
+                                </a>
+                                 <!--CARD 4-->
+                                 <a href="" class="cards">
+                                    <div class="cards__card4">
+                                        <img src="./icones/12.jpeg" alt="Rap Caviar">
+                                     </div>
+                                </a>
+                                 <!--CARD 5-->
+                                 <a href="" class="cards">
+                                    <div class="cards__card5">
+                                        <img src="./icones/5.jpeg" alt="Rock This">
+                                     </div>
+                                </a>
+                                 <!--CARD 6-->
+                                 <a href="" class="cards">
+                                    <div class="cards__card6">
+                                        <img src="./icones/7.jpeg" alt="All New Indie">
+                                     </div>
+                                </a>
+                                  <!--CARD 7-->
+                                  <a href="" class="cards">
+                                    <div class="cards__card7">
+                                        <img src="./icones/4.jpeg" alt="Chill Vibes">
+                                    </div>
+                                </a>
+                                 <!--CARD 8-->
+                                 <a href="" class="cards">
+                                    <div class="cards__card8">
+                                        <img src="./icones/6.jpeg" alt="Friday">
+                                     </div>
+                                </a>
+                            </section>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="result-artist" class="hidden">
+                    <div class="grid-container">
+                        <div class="artist-card" id="">
+                            <div class="card-img">
+                                <img src="artist-img" class="artist-img" id="artist-img">
+                                <div class="play">
+                                    <span class="fa fa-solid fa-play"></span>
+                                </div>
+                            </div>
+                            <div class="card-text">
+                                <a title="Foo Fighters" class="vst" href=""></a>
+                                <span class="artist-name" id="artist-name"></span>
+                                <span class="artist-categorie">Artista</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+         </div>
+    </main>
+
+
+    <footer class="disclaimer-premium">
+        <div class="text">
+            <p class="disclaimer-premium__title">Testar o premium de graça</p>
+            <p class="disclaimer-premium__subtitle">Inscreva-se para curtir música ilimitada e podcasts só com alguns anúncios.Não precisa de cartão de crédito.</p>
+        </div>
+        <div class="button">
+            <button type="button">Inscreva-se grátis</button>
+        </div>
+    </footer>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
